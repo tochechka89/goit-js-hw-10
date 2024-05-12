@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>timer</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+  <link rel="stylesheet" href="./css/1-timer.css" />
+</head>
+
+<body>
+  <section>
+    <a href="./index.html">Go to home</a>
+    <h1>Welcome to timer</h1>
+
+    <input class="input" type="text" id="datetime-picker" />
+    <button class="button" id="start-btn" type="button" disabled data-start>
+      Start
+    </button>
+
+    <div class="timer">
+      <div class="field">
+        <span class="value" id="data-days" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" id="data-hours" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" id="data-minutes" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" id="data-seconds" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+  <script type="module" src="./js/1-timer.js" defer></script>
+</body>
+
+</html>
